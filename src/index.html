@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="shortcut icon" href="img/favicon.ico" type="image/x-icon" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <meta name="theme-color" content="#111111" />
+    <meta name="description" content="John's portfolio" />
+    <title>John</title>
+    <link rel="stylesheet" href="css/global.css" />
+    <link rel="stylesheet" href="css/vendor.css" />
+    <link rel="stylesheet" href="css/main.css" />
+  </head>
+  <body>
+    <div class="site-container">
+      @include('partials/header.html', {"link": "0"})
+      <main class="main">
+        <section class="hello">
+          <div class="container hello__container">
+            <div class="hello__content">
+              <h1 class="hello__title title">Hi, I am John,<br />Creative Technologist</h1>
+              <div class="hello__text">
+                Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint. Velit officia consequat duis enim velit mollit. Exercitation veniam consequat sunt nostrud amet.
+              </div>
+              <a href="#" class="hello__download btn">Download Resume</a>
+            </div>
+            <div class="hello__avatar _ibg">
+              <img src="img/hello/avatar.jpg" alt="avatar" />
+            </div>
+          </div>
+        </section>
+        <section class="recent-posts">
+          <div class="recent-posts__container container">
+            <div class="recent-posts__header">
+              <div class="recent-posts__title title-posts">Recent posts</div>
+              <a href="#" class="recent-posts__view-all">View all</a>
+            </div>
+            <div class="recent-posts__items">
+              <div class="recent-posts__wrapper">
+                <article class="recent-posts__item post">
+                  <a href="#" class="post__title">Making a design system from scratch</a>
+                  <div class="post__info info-post">
+                    <span class="info-post__item info-post__date">12 Feb 2020</span>
+                    <span class="info-post__item info-post__tags">Design, Pattern</span>
+                  </div>
+                  <div class="post__text">
+                    Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint. Velit officia consequat duis enim velit mollit. Exercitation veniam consequat sunt nostrud amet.
+                  </div>
+                </article>
+              </div>
+              <div class="recent-posts__wrapper">
+                <article class="recent-posts__item post">
+                  <a href="#" class="post__title">Creating pixel perfect icons in Figma</a>
+                  <div class="post__info info-post">
+                    <span class="info-post__item info-post__date">12 Feb 2020</span>
+                    <span class="info-post__item info-post__tags">Figma, Icon Design</span>
+                  </div>
+                  <div class="post__text">
+                    Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint. Velit officia consequat duis enim velit mollit. Exercitation veniam consequat sunt nostrud amet.
+                  </div>
+                </article>
+              </div>
+            </div>
+          </div>
+        </section>
+        <section class="featured-works">
+          <div class="featured-works__container container">
+            <div class="featured-works__title title-posts">Featured works</div>
+            <div class="featured-works__item works">
+              <article class="works__item">
+                <a href="#" class="works__image _ibg" tabindex="-1">
+                  <img src="img/works/01.jpg" alt="Designing Dashboards" />
+                </a>
+                <div class="works__body">
+                  <a href="#" class="works__title">Designing Dashboards</a>
+                  <div class="works__info info">
+                    <span class="info__item info__year">2020</span>
+                    <span class="info__item info__tags">Dashboard</span>
+                  </div>
+                  <div class="works__text">
+                    Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint. Velit officia consequat duis enim velit mollit. Exercitation veniam consequat sunt nostrud amet.
+                  </div>
+                </div>
+              </article>
+              <article class="works__item">
+                <a href="#" class="works__image _ibg" tabindex="-1">
+                  <img src="img/works/02.jpg" alt="Vibrant Portraits of 2020" />
+                </a>
+                <div class="works__body">
+                  <a href="#" class="works__title">Vibrant Portraits of 2020</a>
+                  <div class="works__info info">
+                    <span class="info__item info__year">2018</span>
+                    <span class="info__item info__tags">Illustration</span>
+                  </div>
+                  <div class="works__text">
+                    Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint. Velit officia consequat duis enim velit mollit. Exercitation veniam consequat sunt nostrud amet.
+                  </div>
+                </div>
+              </article>
+              <article class="works__item">
+                <a href="#" class="works__image _ibg" tabindex="-1">
+                  <img src="img/works/03.jpg" alt="36 Days of Malayalam type" />
+                </a>
+                <div class="works__body">
+                  <a href="#" class="works__title">36 Days of Malayalam type</a>
+                  <div class="works__info info">
+                    <span class="info__item info__year">2018</span>
+                    <span class="info__item info__tags">Typography</span>
+                  </div>
+                  <div class="works__text">
+                    Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint. Velit officia consequat duis enim velit mollit. Exercitation veniam consequat sunt nostrud amet.
+                  </div>
+                </div>
+              </article>
+              <!-- <article class="works__item">
+                <a href="#" class="works__image _ibg" tabindex="-1">
+                  <img src="img/works/04.jpg" alt="Components" />
+                </a>
+                <div class="works__body">
+                  <a href="#" class="works__title">Components</a>
+                  <div class="works__info info">
+                    <span class="info__item info__year">2018</span>
+                    <span class="info__item info__tags">Components, Design</span>
+                  </div>
+                  <div class="works__text">
+                    Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint. Velit officia consequat duis enim velit mollit. Exercitation veniam consequat sunt nostrud amet.
+                  </div>
+                </div>
+              </article>
+              <article class="works__item">
+                <a href="#" class="works__image _ibg" tabindex="-1">
+                  <img src="img/works/05.jpg" alt="Designing Landing pages" />
+                </a>
+                <div class="works__body">
+                  <a href="#" class="works__title">Designing Landing pages</a>
+                  <div class="works__info info">
+                    <span class="info__item info__year">2020</span>
+                    <span class="info__item info__tags">Website</span>
+                  </div>
+                  <div class="works__text">
+                    Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint. Velit officia consequat duis enim velit mollit. Exercitation veniam consequat sunt nostrud amet.
+                  </div>
+                </div>
+              </article> -->
+            </div>
+          </div>
+        </section>
+      </main>
+      @include('partials/footer.html')
+    </div>
+    <script src="js/vendor.js"></script>
+    <script src="js/main.js"></script>
+  </body>
+</html>

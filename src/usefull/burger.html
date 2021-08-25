@@ -1,0 +1,26 @@
+<style>
+  .burger {
+    --burger-width: 40px;
+    --burger-height: 24px;
+    --burger-line-height: 4px;
+    --burger-line-radius: 4px;
+    --burger-color: #{$color-black};
+    --burger-color-hover: #{$color-black};
+
+    @include burger;
+  }
+</style>
+
+<body>
+  <button class="burger btn-reset" aria-label="menu-burger">
+    <span class="burger__line"></span>
+  </button>
+</body>
+
+<script>
+  document.querySelector(".burger").addEventListener("click", (e) => {
+    document.body.classList.toggle("_lock");
+    e.currentTarget.classList.toggle("_active");
+    //NAVIGATION.classList.toggle("_active");
+  });
+</script>

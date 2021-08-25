@@ -1,0 +1,66 @@
+.article {
+  padding-bottom: 30px;
+
+  // .article__container
+  &__container {
+    margin: 0 auto;
+    padding: 0 18px;
+    max-width: 717px;
+  }
+
+  // .article__title
+  &__title {
+    margin-bottom: 30px;
+    font-size: 34px;
+
+    @media (max-width: $md3 + px) {
+      margin-bottom: 20px;
+      font-size: 30px;
+    }
+  }
+
+  // .article__info
+  &__info {
+    &:not(:last-child) {
+      margin-bottom: 23px;
+    }
+  }
+
+  // .article__text
+  &__text {
+    margin-bottom: -20px;
+
+    p {
+      margin: 0 0 20px;
+    }
+
+    img {
+      margin-bottom: 20px;
+    }
+  }
+
+  .info {
+    // .info__item
+    &__item {
+      &:not(:last-child) {
+        margin-right: 17px;
+      }
+    }
+
+    // .info__year
+    &__year {
+      background-color: #ff7c7c;
+
+      @media (max-width: $md3 + px) {
+        font-size: 18px;
+      }
+    }
+
+    // .info__tags
+    &__tags {
+      @media (max-width: $md3 + px) {
+        font-size: 18px;
+      }
+    }
+  }
+}

@@ -1,0 +1,256 @@
+@use "sass:math";
+
+html {
+  box-sizing: border-box;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+}
+
+body {
+  margin: 0;
+  font-family: "Heebo", sans-serif;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: math.div(23, 16) * 100%;
+  color: $color-main;
+  background-color: $color-white;
+
+  &._lock {
+    overflow: hidden;
+  }
+}
+
+a {
+  text-decoration: none;
+}
+
+.list-reset {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.btn-reset {
+  border: none;
+  padding: 0;
+  background: transparent;
+  cursor: pointer;
+}
+
+img {
+  max-width: 100%;
+}
+
+._ibg {
+  position: relative;
+
+  img {
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+}
+
+.container {
+  margin: 0 auto;
+  padding: 0 15px;
+  max-width: #{$maxWidthContainer + 30}px;
+
+  @media (max-width: $md1 + px) {
+    max-width: 750px;
+  }
+
+  @media (max-width: $md3 + px) {
+    padding: 0 10px;
+  }
+}
+
+.site-container {
+  display: flex;
+  flex-direction: column;
+  overflow: hidden;
+  min-height: 100%;
+}
+
+html,
+body {
+  height: 100%;
+}
+
+.main {
+  flex: 1 1 auto;
+  padding-top: 140px;
+
+  @media (max-width: $md3 + px) {
+    padding-top: 80px;
+  }
+}
+
+*:focus:not(.focus-visible) {
+  outline: none;
+}
+
+.js-focus-visible :focus:not(.focus-visible) {
+  outline: none;
+}
+
+/* stylelint-disable */
+.visually-hidden {
+  position: absolute;
+  overflow: hidden;
+  margin: -1px;
+  border: none;
+  padding: 0;
+  width: 1px;
+  height: 1px;
+  clip: rect(0 0 0 0);
+}
+/* stylelint-enable */
+
+.title {
+  font-weight: 700;
+  font-size: 44px;
+  line-height: math.div(60, 44) * 100%;
+  color: $color-main;
+
+  @media (max-width: $md3 + px) {
+    font-size: 32px;
+  }
+}
+
+.btn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 2px;
+  padding: 8px 20px;
+  height: 47px;
+  font-weight: 500;
+  font-size: 20px;
+  line-height: math.div(29, 20) * 100%;
+  text-align: center;
+  color: $color-white;
+  background-color: $color-primary;
+
+  @media (any-hover: hover) {
+    transition: background-color 0.3s ease-in-out;
+
+    &:hover {
+      background-color: $color-primary-hover;
+    }
+  }
+}
+
+.title-posts {
+  font-size: 22px;
+
+  @media (max-width: $md3 + px) {
+    font-size: 18px;
+    text-align: center;
+  }
+}
+
+.post {
+  // .post__title
+  &__title {
+    display: inline-block;
+    font-weight: 700;
+    font-size: 26px;
+    line-height: math.div(38, 26) * 100%;
+    color: inherit;
+
+    &:not(:last-child) {
+      margin-bottom: 18px;
+    }
+
+    @media (any-hover: hover) {
+      transition: color 0.3s ease-in-out;
+
+      &:hover {
+        color: $color-primary;
+      }
+    }
+
+    @media (max-width: $md3 + px) {
+      font-size: 22px;
+    }
+  }
+
+  // .post__info
+  &__info {
+    &:not(:last-child) {
+      margin-bottom: 18px;
+    }
+  }
+
+  // .post__text
+  &__text {
+    &:not(:last-child) {
+      margin-bottom: 18px;
+    }
+  }
+}
+
+.info-post {
+  font-size: 18px;
+  line-height: math.div(26, 18) * 100%;
+
+  // .info-post__item
+  &__item {
+    &:not(:first-child) {
+      margin-left: 15px;
+    }
+
+    &:not(:last-child) {
+      &::after {
+        content: "|";
+        margin-left: 15px;
+      }
+    }
+  }
+
+  @media (max-width: $md3 + px) {
+    font-size: 16px;
+  }
+}
+
+.info {
+  // .info__item
+  &__item {
+    &:not(:last-child) {
+      margin-right: 26px;
+    }
+  }
+
+  // .info__year
+  &__year {
+    border-radius: 16px;
+    padding: 0 10px;
+    font-weight: 900;
+    font-size: 18px;
+    color: $color-white;
+    background: #142850;
+
+    @media (max-width: $md3 + px) {
+      font-size: 16px;
+    }
+  }
+
+  // .info__tags
+  &__tags {
+    font-size: 20px;
+    line-height: 29px;
+    color: $color-light;
+
+    @media (max-width: $md3 + px) {
+      font-size: 16px;
+    }
+  }
+}

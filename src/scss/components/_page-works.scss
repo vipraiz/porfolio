@@ -1,0 +1,12 @@
+.page-works {
+  padding-bottom: 50px;
+
+  // .page-works__title
+  &__title {
+    margin: 0;
+  }
+
+  @media (max-width: $md3 + px) {
+    padding-bottom: 30px;
+  }
+}

@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="shortcut icon" href="img/favicon.ico" type="image/x-icon" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <meta name="theme-color" content="#111111" />
+    <meta name="description" content="John's article" />
+    <title>John</title>
+    <link rel="stylesheet" href="css/global.css" />
+    <link rel="stylesheet" href="css/vendor.css" />
+    <link rel="stylesheet" href="css/main.css" />
+  </head>
+  <body>
+    <div class="site-container">
+      @include('partials/header.html', { "link": 1 })
+      <main class="main">
+        <section class="article">
+          <div class="article__container">
+            <h1 class="article__title title">Designing Dashboards with usability in mind</h1>
+            <div class="article__info info">
+              <span class="info__item info__year">2020</span>
+              <span class="info__item info__tags">Dashboard, User Experience Design</span>
+            </div>
+            <div class="article__text">
+              <p>Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint. Velit officia consequat duis enim velit mollit. Exercitation veniam consequat sunt nostrud amet.</p>
+              <img src="img/article/01.jpg" alt="article image" />
+              <p>Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint. Velit officia consequat duis enim velit mollit. Exercitation veniam consequat sunt nostrud amet.</p>
+              <img src="img/article/02.jpg" alt="article image" />
+              <img src="img/article/03.jpg" alt="article image" />
+            </div>
+          </div>
+        </section>
+      </main>
+      @include('partials/footer.html')
+    </div>
+    <script src="js/vendor.js"></script>
+    <script src="js/main.js"></script>
+  </body>
+</html>

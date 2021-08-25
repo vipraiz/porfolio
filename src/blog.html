@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="shortcut icon" href="img/favicon.ico" type="image/x-icon" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <meta name="theme-color" content="#111111" />
+    <meta name="description" content="John's blog" />
+    <title>John</title>
+    <link rel="stylesheet" href="css/global.css" />
+    <link rel="stylesheet" href="css/vendor.css" />
+    <link rel="stylesheet" href="css/main.css" />
+  </head>
+  <body>
+    <div class="site-container">
+      @include('partials/header.html', { "link": 2 })
+      <main class="main">
+        <section class="blog">
+          <div class="blog__container container">
+            <h1 class="blog__title title">Blog</h1>
+            <div class="blog__items">
+              <article class="blog__item post">
+                <a href="#" class="post__title">UI Interactions of the week</a>
+                <div class="post__info info-post">
+                  <span class="info-post__item info-post__date">12 Feb 2020</span>
+                  <span class="info-post__item info-post__tags">Express, Handlebars</span>
+                </div>
+                <div class="post__text">
+                  Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint. Velit officia consequat duis enim velit mollit. Exercitation veniam consequat sunt nostrud amet.
+                </div>
+              </article>
+              <article class="blog__item post">
+                <a href="#" class="post__title">UI Interactions of the week</a>
+                <div class="post__info info-post">
+                  <span class="info-post__item info-post__date">12 Feb 2020</span>
+                  <span class="info-post__item info-post__tags">Express, Handlebars</span>
+                </div>
+                <div class="post__text">
+                  Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint. Velit officia consequat duis enim velit mollit. Exercitation veniam consequat sunt nostrud amet.
+                </div>
+              </article>
+              <article class="blog__item post">
+                <a href="#" class="post__title">UI Interactions of the week</a>
+                <div class="post__info info-post">
+                  <span class="info-post__item info-post__date">12 Feb 2020</span>
+                  <span class="info-post__item info-post__tags">Express, Handlebars</span>
+                </div>
+                <div class="post__text">
+                  Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint. Velit officia consequat duis enim velit mollit. Exercitation veniam consequat sunt nostrud amet.
+                </div>
+              </article>
+              <article class="blog__item post">
+                <a href="#" class="post__title">UI Interactions of the week</a>
+                <div class="post__info info-post">
+                  <span class="info-post__item info-post__date">12 Feb 2020</span>
+                  <span class="info-post__item info-post__tags">Express, Handlebars</span>
+                </div>
+                <div class="post__text">
+                  Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint. Velit officia consequat duis enim velit mollit. Exercitation veniam consequat sunt nostrud amet.
+                </div>
+              </article>
+            </div>
+          </div>
+        </section>
+      </main>
+      @include('partials/footer.html')
+    </div>
+    <script src="js/vendor.js"></script>
+    <script src="js/main.js"></script>
+  </body>
+</html>
